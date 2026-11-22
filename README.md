@@ -1,3 +1,42 @@
+<div align="center">
+
+**ARDUINO UNO · SENSORS · SERVO CONTROL**
+
+# Automatic Parking System
+
+### Detect a vehicle. Move the gate. Keep count.
+
+[Explore the project](#project-overview) · [Documentation](#project-documentation) · [Contact the developer](mailto:louise.catala24@gmail.com)
+
+</div>
+
+<p align="center">
+  <img src="docs/images/circuit-preview.png" alt="Parking-system wiring illustration with Arduino, IR sensors, servo, LCD, and lighting" width="1000">
+</p>
+
+<p align="center"><em>Original wiring illustration extracted from Circuit Diagram.pdf. This is a circuit illustration, not a photograph of a completed build.</em></p>
+
+## Project overview
+
+A four-slot parking model brings together vehicle detection, a servo-operated gate, an LCD counter, and light-sensitive illumination. It demonstrates how several small inputs and outputs can work together as one embedded system.
+
+| At a glance | What it means |
+| --- | --- |
+| **Detect** | Two IR sensors monitor vehicle movement |
+| **Respond** | A servo moves the model gate |
+| **Inform** | The LCD shows available slots |
+
+## Follow a vehicle through the system
+
+The intended sequence is straightforward: detect entry or exit, operate the gate, and update the slot count. An LDR provides the lighting input. The documented model handles one car at a time and resets to four available slots after restarting. The current sketch filename is `Parking_System_CODE.ino`; use that file when following the preserved setup notes.
+
+[View the Arduino sketch](Parking_System_CODE.ino) · [Open the full circuit diagram](Circuit%20Diagram.pdf)
+
+## Project documentation
+
+<details>
+<summary><strong>Open the original project notes, files, and setup instructions</strong></summary>
+
 # Automatic Parking System
 
 An Arduino-based four-slot parking system with an automatic gate, LCD slot counter, and automatic lights.
@@ -52,6 +91,11 @@ Connect all grounds together.
 
 Adjust servo angles, LCD address, and light thresholds as needed. Slots reset to four after restarting. Designed for one car at a time.
 
+
+
+</details>
+
+---
 
 ## License and Support
 
